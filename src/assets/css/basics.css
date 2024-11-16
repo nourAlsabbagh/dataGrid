@@ -1,0 +1,226 @@
+:root {
+  --blue: #019fa0;
+  --green: #02af82;
+  --active-blue: #018787;
+
+}
+/* general */
+
+.container {
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+}
+
+.inner-container {
+  width: 90vw;
+  margin: auto;
+}
+/* customized */
+.hello-message,
+.main {
+  color: rgb(63, 63, 63);
+  text-align: center;
+}
+
+.hello-message {
+  font-size: 20px;
+}
+
+.hello-message {
+  color: #002e7c;
+  text-align: center;
+}
+
+/* dimantions */
+.w-100 {
+  width: 100%;
+}
+.w-fit-content{
+  width: fit-content;
+}
+.h-100 {
+  height: 100%;
+}
+
+/* margins */
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+/* padding */
+.p-10px {
+  padding: 10px;
+}
+.ms-20{
+  margin-left: 20px;
+}
+.px-20px {
+  padding: 0 20px;
+}
+
+/* display */
+
+
+.d-flex {
+  display: flex;
+}
+.d-none{
+  display: none;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* font */
+.bold {
+  font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+/* bg color */
+.bg-color {
+  background-color: #f9f9f9;
+}
+.bg-white{
+    background-color: white;
+
+}
+/* font size */
+.f-12px {
+  font-size: 12px !important;
+}
+
+.f-14px {
+  font-size: 14px;
+}
+
+.f-25px {
+  font-size: 25px;
+}
+
+/* text-align */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75%;
+}
+
+button, button:focus {
+  border: none;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+.button, .button:focus, .button:focus-visible {
+  font-size: 14px;
+  background-color: var(--blue);
+  padding: 7px 10px;
+  border-radius: 30px;
+  color: white;
+  outline: none;
+  margin-right: 10px;
+  min-width: 150px;
+  width: fit-content;
+  text-wrap: nowrap;
+}
+.button.fetch-data{
+  background-color: var(--green);
+
+}
+
+.button:hover {
+  background-color: var(--active-blue)
+}
+
+.buttons-container {
+  /* width: 100px; */
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  margin-bottom: 17px;
+}
+
+.light-gray {
+  color: var(--ag-header-foreground-color);
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .options.text-left {
+    text-align: center;
+  }
+
+  .button, button:focus, button:focus-visible {
+    padding: 5px 11px;
+    min-width: 171px;
+  }
+
+  .buttons-container {
+    /* width: 100px; */
+    padding: 5px 11px;
+    min-width: 47%;
+  }
+
+}
