@@ -157,32 +157,24 @@ button, button:focus {
   overflow: visible;
   outline: none;
   background: transparent;
-
-  /* inherit font & color from ancestor */
   color: inherit;
   font: inherit;
-
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
   line-height: normal;
-
-  /* Corrects font smoothing for webkit */
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
-
-  /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none;
 }
 
 .button, .button:focus, .button:focus-visible {
   font-size: 14px;
   background-color: var(--blue);
-  padding: 7px 10px;
-  padding-bottom: 10px;
-  border-radius: 30px;
+  padding: 7px 10px!important;
+  padding-bottom: 10px!important;
+  border-radius: 30px!important;
   color: white;
   outline: none;
   margin-right: 10px;
-  min-width: 150px;
+  min-width: 150px!important;
   width: fit-content;
   text-wrap: nowrap;
 }
@@ -213,17 +205,17 @@ button, button:focus {
     text-align: center;
   }
 
-  .button, button:focus, button:focus-visible {
-    padding: 8px 11px;
-    min-width: 160px;
-    padding-bottom: 10px;
+  .button, .button:focus, .button:focus-visible {
+    padding: 8px 11px!important;
+    min-width: 160px!important;
+    padding-bottom: 10px!important;
 
   }
 
   .buttons-container {
     /* width: 100px; */
-    padding: 5px 11px;
-    width: 100%;
+    width: initial;
+    justify-content: space-between;
   }
 
 }
