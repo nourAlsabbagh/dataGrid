@@ -166,7 +166,9 @@ input, input:focus, input:focus-visible {
 .custom-table-theme .ag-cell:not(:first-child) {
   border-left: var(--ag-cell-border);
 }
-
+.ag-picker-field-display{
+  margin-left: 5px;
+}
 /* ag row */
 .custom-table-theme .ag-row {
   border-bottom: var(--ag-cell-border);
@@ -254,6 +256,5 @@ input, input:focus, input:focus-visible {
 @media only screen and (max-width: 600px) {
   .custom-table-theme .ag-paging-panel {
     justify-content: space-evenly;
-
   }
 }

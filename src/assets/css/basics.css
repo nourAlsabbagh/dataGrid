@@ -177,6 +177,7 @@ button, button:focus {
   font-size: 14px;
   background-color: var(--blue);
   padding: 7px 10px;
+  padding-bottom: 10px;
   border-radius: 30px;
   color: white;
   outline: none;
@@ -213,14 +214,16 @@ button, button:focus {
   }
 
   .button, button:focus, button:focus-visible {
-    padding: 5px 11px;
-    min-width: 171px;
+    padding: 8px 11px;
+    min-width: 160px;
+    padding-bottom: 10px;
+
   }
 
   .buttons-container {
     /* width: 100px; */
     padding: 5px 11px;
-    min-width: 47%;
+    width: 100%;
   }
 
 }

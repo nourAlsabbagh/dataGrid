@@ -67,7 +67,7 @@ function Demo() {
         />
         <Btn
           classes="mb-10 fetch-data"
-          text="Fetch data from local csv file"
+          text="Fetch data from csv"
           clickHandler={fetchDataFromCsv}
         />
        
