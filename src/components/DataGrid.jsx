@@ -18,23 +18,7 @@ function DatatGrid({ rows, colsDef, defaultColDef, state, changeNameHandler }) {
   };
   useEffect(() => {
     // gridRef.current;
-    const closeInputMode = (e) => {
-      if (!e.target.closest(".custom-table-theme .ag-header-cell-label")) {
-        e.target.classList.toggle("d-none");
-        Array.from(document.querySelectorAll(".ag-header-cell-text")).map(
-          (headerCell) => {
-            headerCell.classList.remove("d-none");
-          }
-        );
-        Array.from(document.querySelectorAll("input.editMode")).map(
-          (headerInput) => {
-            headerInput.classList.add("d-none");
-          }
-        );
-      }
-    };
-    document.addEventListener("click", closeInputMode);
-  }, []);
+      }, []);
 
   return (
     <>
