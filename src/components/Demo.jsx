@@ -26,7 +26,7 @@ function Demo() {
   const fetchDataFromCsv = () => {
     setState("loading");
     try {
-      fetchData("csv", process.env.PUBLIC_URL+"/DB.csv");
+      fetchData("csv", process.env.PUBLIC_URL+"/public/DB.csv");
       setState(null);
     } catch {
       setState("failed");
