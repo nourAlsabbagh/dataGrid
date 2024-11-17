@@ -43,8 +43,12 @@
 }
 
 .custom-table-theme .ag-center-cols-container,
+.custom-table-theme .ag-paging-panel
 .custom-table-theme .ag-row {
   background-color: #fff;
+}
+.custom-table-theme .ag-paging-panel{
+  color: #494949;
 }
 .align-selft-start{
   align-self: flex-start;
