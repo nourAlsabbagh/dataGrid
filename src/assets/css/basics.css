@@ -198,7 +198,11 @@ button, button:focus {
 .light-gray {
   color: var(--ag-header-foreground-color);
 }
-
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color:#fefefe;
+}
 /* responsive */
 @media only screen and (max-width: 600px) {
   .options.text-left {
