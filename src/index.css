@@ -10,10 +10,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body{
-  background-color: #fbfbfb;
-
-}
 #root{
   padding: 1.5rem!important;
 }
