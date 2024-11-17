@@ -139,6 +139,7 @@ input, input:focus, input:focus-visible {
 .custom-table-theme .ag-list-item {
   justify-content: center;
   border-bottom: var(--ag-cell-border);
+color: #494949;
 }
 
 .custom-table-theme .ag-list-item:hover {
